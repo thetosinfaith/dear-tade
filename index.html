@@ -1,120 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>You've got a mail</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Outfit:wght@500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-XXX" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<div class="wrapper">
-    <div class="mailbox">
-        <div class="heart-icon1">💜</div>
-        <div class="heart-icon2">💜</div>
-        <div class="heart-icon3">💜</div>
-        <div class="heart-icon4">💜</div>
-        <div class="heart-icon5">💜</div>
-    </div>
-    <div class="envelope" onclick="toggleMessage()">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Outfit:wght@500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-XXX"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="mailbox">
+        <div class="heart-icon1">😍</div>
+        <div class="heart-icon2">😍</div>
+        <div class="heart-icon3">😍</div>
+        <div class="heart-icon4">😍</div>
+        <div class="heart-icon5">😍</div>
+      </div>
+      <div class="envelope" onclick="toggleMessage()">
         <div class="mail">
-            <div class="envelope-back"></div>
-            <div class="message">
-                <div class="message-border"></div>
-                <div class="message-header"><p style="font-weight: bold; padding-left: 10px;"> Hi Tade, 💜</p></div>
-                <div class="message-body" id="messageContent" style="display: none;">
-                    <p>I have never written a love letter, but it's weird; I feel like I know how to write. 😅</p>
-                    <br>
-                    <p>I love your energy, Tade.</p>
-                    <br>
-                    <p>I am trying to say: I like like you. I have a crush on you. Thinking about you makes me giddy, and I get all excited when I hear you laugh. 😍</p>
-                    <br>
-                    <p>I have felt this way for some time now, but I really didn’t know how to say it or if I should. I like you so much I don’t want to lose you. I kind of just want to be with you and around you as much as I can.</p> 
-                    <br>
-                    <p>I don’t want to tell you I have feelings and then make things awkward in our relationship. I like you too much to lose you over something silly like the romantic feelings not being mutual. ❤️</p>
-                    <br>
-                    <p>Whether we are soulmates in terms of just being friends or soulmates in terms of being in love with each other, I am honestly fine with either. </p>
-                    <br>
-                    <p>Having you just as a friend has brought me so much joy. Thank you for touching my life in such a beautiful way. 🌟</p>
-                    <br>
-                    <p>But let me explain myself a little more... You deserve to know and hear how truly amazing you are, and it is quite unfortunate that letters like this aren’t written to people more often. 😔</p>
-                    <br> 
-                    <p>First, as you know, I think you are really funny, and I love that we can build off each other's humor. But it's not just about how smart and funny you are..</p>
-                    <br>   
-                    <p>I love how silly you are. You are fun, you make life fun. I love how you are just yourself: weird, silly, quirky, childish, and goofy. You don’t even need to try; you are just pure light. You are someone who fills me up with so much laughter. 😄</p>
-                    <br>
-                    <p>I also love and appreciate that you are sensitive, thoughtful, and kind on my bad days.</p>
-                    <br>
-                    <p>My dad is one of the strongest and largest people I know; I guess that is probably why most of his comebacks sting. </p>
-                    <br>
-                    <p>Yet, he is one of the most sensitive and emotional people I know. He wears his heart on his sleeve and allows others to see it. ❤️</p>
-                    <br>
-                    <p>He has taught me that strength is not how little you can allow yourself to feel or care, rather...</p>
-                    <br>
-                    <p>It is allowing yourself to feel and care about everything and still be loving and open with the world even when you can be hurt. I love that you are strong like that too. 🦋</p>
-                    <br>
-                    <p>I love that you will get teary and are not ashamed of that. It is beautiful, inspiring, and makes me feel comfortable letting my guard down. 🥰</p>
-                    <br>
-                    <p>Even though we've only talked over the phone, I feel safe and protected when I'm talking with you. It's a feeling I haven't exactly experienced with anyone else before.</p>
-                    <br>
-                    <p>I love that you see and like me for who I am and what I love.</p>
-                    <br>
-                    <p>I have talked to many of my friends, both guys and girls, about how much I love Shawarma, my aspiration to become <span style="font-weight: bold;">Africa's Most Celebrated Woman in Tech</span>, my dream of owning a farm, and my excitement about building the largest ecommerce conglomerate, standing on a global stage, giving the most impactful presentations on how to move Nigeria forward, and many of them smirk or brush it off, but thanks for being supportive about it. 🤩</p>
-                    <br>
-                    <p>Even if those things don’t particularly get you all excited like they do me, thanks for caring enough about me to listen to me talk about the things that I am passionate about. You make me feel seen, heard, and appreciated.</p>
-                    <br>
-                    <p>I also really do think you are incredibly cute. However, that is not why I like you the way I do. There are so many cute boys, too many, but there is only one <span style="font-weight: bold;">Adenuga Tirenioluwa</span>. 🥳</p>
-                    <br>
-                    <p>You know, for a long time and honestly still sometimes, I look in the mirror and think what could I do or change to be more attractive or more beautiful? To be loved romantically? 💕</p>
-                    <br>
-                    <p>I am actually crying right now, writing this. It didn’t really occur to me until right now. I like you for so many more reasons than the way you look. I love that you are you and the way you make me feel.</p>
-                    <br>
-                    <p>I love that you are kind, affectionate, thoughtful, so so funny, silly, and loving. 😄</p>
-                    <br>
-                    <p>I love that you are hard-working, have dreams, and that you are interesting. Someday, I hope you look me in the eyes and hug me longer than most people do. 🤗</p>
-                    <br>
-                    <p>I am trying to type this through tears in my eyes because, up until now, it never occurred to me that maybe the person who is going to like me like I like you—got that?—maybe they are going to be attracted to me for the same reasons I am attracted to you.</p>
-                    <br>
-                    <p>Maybe they are going to like me for me, who I am, for my heart, my soul, and for far more important qualities than my external appearance. 😢</p>
-                    <br> 
-                    <p>For someone to love me like that, I can wait a long time, because I don’t believe there is anything more magical than true love.</p>
-                    <br>
-                    <p>Regardless of your feelings, write me back, Tade.</p>
-                    <br>
-                    <p>Even if it doesn’t work out, I would keep that letter forever. And if soulmates who are not romantic is the better option for our relationship that too is still such a gift to me. </p>
-                    <br> 
-                    <p>As I have gotten older, the crushes I have formed on boys have only gotten more beautiful and special, so if it is not you, it is going to be someone else so incredibly amazing; I have no doubt that he is out there.</p>
-                    <br>
-                    <p>I really thought sharing these feelings would be one of the hardest things for me, but honestly, telling you how amazing you are is so easy. </p>
-                    <br>
-                    <p>The thought of you reading this letter and feeling so loved, appreciated, and valued brings me nothing but happiness. You have touched my life in such a beautiful way that I am not afraid anymore. Thank you for being you, and helping to teach me how to be me.</p>
-                    <br>
-                    <p><span style="font-weight: bold;">With Love,</span></p>
-                    <p>Tosin</p>
-
-                </div>
-                <div class="message-stamp">
-                    <div class="stamp-inner"></div>
-                </div>
+          <div class="envelope-back"></div>
+          <div class="message">
+            <div class="message-border"></div>
+            <div class="message-header">
+              <p style="font-weight: bold; padding-left: 10px">
+                Hi Oluwatobi, ❤
+              </p>
             </div>
-            <div class="envelope-front"></div>
-            <div class="envelope-body"></div>
-            <div class="envelope-side"></div>
+            <div class="message-body" id="messageContent" style="display: none">
+              <p>
+                Never have I ever written a love letter, nor have I had to
+                bother about celebrating the season of love, the special
+                Valentine’s Day.
+              </p>
+              <br />
+              <p>
+                The very day I set my eyes on you, it was a subtle decision I
+                made with myself: this is a woman in whom I am well pleased. I
+                shall be with her as the Lord grants me the chance to.
+              </p>
+              <br />
+              <p>
+                From one comment to a DM, from the first second I met you, to
+                tens of minutes, to hundreds of hours, turning days into weeks
+                and then months and now close to the first year, I am seeing
+                firsthand how love can direct the course of our actions and what
+                a special way to acknowledge this love.
+              </p>
+              <br />
+              <p>
+                Oluwatobi, to be very honest, I have never envisioned myself
+                celebrating Valentine’s since the past decade; it has always
+                been just another day, bare and occupied with usual activities
+                of the day.
+              </p>
+              <br />
+              <p>
+                But in this year, blessed by the Lord, it is such a beauty to
+                have you in my life. Your presence has been so invaluable and
+                all that you have done is matched with such genuineness that I
+                am mesmerized at your amazingness and awesomeness that leaves me
+                always speechless.
+              </p>
+              <br />
+              <p>
+                As I write you this, there sits on my lips a cute pretty smile,
+                hoping that while you read these words too, you’re smiling.
+              </p>
+              <br />
+              <p>
+                You must be wondering, why have I written these many words to
+                you? Well, it’s none other than the one reason for the season.
+              </p>
+              <br />
+              <p style="font-weight: bold">
+                Oluwatobiloba Nao mi Ajoketeminikan Aridunumi…
+              </p>
+              <div class="valentine-container">
+                <p class="love-text">
+                  Will you be my Val? To happy ever after 🤭
+                </p>
+
+                <div class="button-box">
+                  <button
+                    id="yesBtn"
+                    onclick="alert('Yay! ❤️ I knew you would say yes!')"
+                  >
+                    Yes
+                  </button>
+
+                  <button id="noBtn" onmouseover="runAway()">No</button>
+                </div>
+              </div>
+              <br />
+              <p><span style="font-weight: bold">From your beloved,</span></p>
+              <p>Tosin Olomu</p>
+            </div>
+            <div class="message-stamp">
+              <div class="stamp-inner"></div>
+            </div>
+          </div>
+          <div class="envelope-front"></div>
+          <div class="envelope-body"></div>
+          <div class="envelope-side"></div>
         </div>
         <div class="shadow"></div>
+      </div>
     </div>
-</div>
 
-<div class="footer">
-    <a href="https://github.com/thetosinfaith" target="_blank" rel="noopener noreferrer">thetosinfaith 💜</a>
-    <span></span>
-</div>
+    <div class="footer">
+      <a
+        href="https://"
+        target="_blank"
+        rel="noopener noreferrer"
+        >With Love, Tosin Olomu</a
+      >
+      <span style="color: red;"></span>
+    </div>
 
-<script src="app.js"></script>
-
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>

@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    margin: 0;
+   margin: 0;
     padding: 0;
     font-family: "Mukta", sans-serif;
     font-weight: 300;
@@ -8,14 +8,15 @@
 }
 
 .wrapper {
-    height: 100vh;
-    width: 100%;
-    background: aliceblue;
+min-height: 100vh;    
+width: 100%;
+  
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .heart-icons {
@@ -74,13 +75,11 @@
     align-items: flex-start;
     height: 80%;
     border-radius: 2px;
-    width: 60%;
+    width: 90%;
     position: relative;
 }
 
-body {
-    background: #6741D9;
-}
+
 
 .envelope {
     position: absolute;
@@ -110,7 +109,7 @@ body {
     height: 0;
     border-style: solid;
     border-width: 0 0 150px 300px;
-    border-color: transparent transparent #6741D9 transparent;
+    border-color: transparent transparent crimson transparent;
     z-index: 2;
 }
 
@@ -127,7 +126,7 @@ body {
     -moz-transition: transform .4s .4s, z-index .2s .4s;
     transform-origin: 50% 0%;
     transition: transform .4s .4s, z-index .2s .4s;
-    border-color: #6741D9 transparent transparent transparent;
+    border-color: crimson transparent transparent transparent;
     z-index: 2;
 }
 
@@ -136,7 +135,7 @@ body {
     bottom: 0;
     width: 300px;
     height: 150px;
-    background: #6741D9;
+    background: crimson;
     z-index: 0;
 }
 
@@ -147,7 +146,7 @@ body {
     height: 0;
     border-style: solid;
     border-width: 75px 0 75px 150px;
-    border-color: transparent transparent transparent #6741D9;
+    border-color: transparent transparent transparent crimson;
     z-index: 2;
 }
 
@@ -170,7 +169,7 @@ body {
     width: 100%;
     background: repeating-linear-gradient(
         -45deg,
-        #B197FC,
+        crimson,
         white 12px,
         transparent 12px,
         transparent 27px
@@ -184,7 +183,7 @@ body {
     width: 80%;
     border-radius: 2px;
     background: white;
-    color: #6741D9;
+    color: crimson;
 }
 
 .mail .message .message-body {
@@ -203,7 +202,7 @@ body {
     border-radius: 100%;
     height: 45px;
     width: 45px;
-    background: #B197FC;
+    background: crimson;
    
     opacity: 0.3;
 }
@@ -248,23 +247,132 @@ body {
     width: 650px;
     height: 60px;
 }
-
 .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
+  /* This adds a big gap at the bottom so it's not touching the edge */
+  margin-top: 50px; 
+  padding: 40px 20px;
+  
+  text-align: center;
+  background-color: #ffffff;
+  border-top: 2px solid #f0f0f0;
+  
+  /* This helps center things neatly */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #0070f3;
+}
+
+.footer span {
+  font-size: 14px;
+  color: #999;
+}
+  
+.valentine-container {
     text-align: center;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-  
-  .footer a {
-    font-size: 14px;
+
+  .love-text {
+    font-size: 22px;
+    color: #d63384;
+    margin-bottom: 30px;
+  }
+
+  .button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 50px;
+  }
+
+  button {
+    padding: 12px 28px;
+    font-size: 18px;
     font-weight: bold;
-    text-decoration: none;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s; /* Makes the movement look smooth */
   }
-  
-  .footer span {
-    font-size: 14px;
+
+  #yesBtn {
+    background-color: #ff4d6d;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 77, 109, 0.3);
   }
-  
+
+  #noBtn {
+    background-color: #f0f0f0;
+    color: #555;
+    position: relative; /* Keeps it in place until it moves */
+    z-index: 999;
+  }
+
+  .signature {
+    margin-top: 60px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* The hidden overlay */
+.overlay {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 77, 109, 0.9); /* Pretty pink see-through color */
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px); /* Blurs the background for a cool look */
+}
+
+/* The card in the middle */
+.overlay-content {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  max-width: 80%;
+  animation: popIn 0.5s ease;
+}
+
+.overlay-content h1 {
+  color: #ff4d6d;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.overlay-content p {
+  font-size: 18px;
+  color: #555;
+}
+
+.floating-hearts {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+/* A simple animation to make it pop */
+@keyframes popIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
